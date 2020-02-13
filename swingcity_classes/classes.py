@@ -39,9 +39,9 @@ class Current:
                  ticketed, accepted, virgin, intention, arrival, 
                  departure, arr_from, depart_to):
         super().__init__(hash, fname, lname, c_score, leg_name, 
-                 p_name, email, alpha_hash, phone, location, 
-                 b_day, gender, sponsor, bio, avatar, pronoun, 
-                 fb, insta, er_con, er_num)
+                        p_name, email, alpha_hash, phone, location, 
+                        b_day, gender, sponsor, bio, avatar, pronoun, 
+                        fb, insta, er_con, er_num)
         self.optin = optin #required for engagement
         self.scat = scat #boolean
         self.scab = scab #boolean
@@ -63,6 +63,10 @@ class Tickets:
     def __init__(self, bracket, tick, tick_type, wap, 
                  wap_origin, wap_date, tick_hash, tick_price, 
                  veh_pass, tick_que, dgs):
+        super().__init__(hash, fname, lname, c_score, leg_name, 
+                        p_name, email, alpha_hash, phone, location, 
+                        b_day, gender, sponsor, bio, avatar, pronoun, 
+                        fb, insta, er_con, er_num)
         self.bracket = bracket #slot identifier
         self.tick = tick #ticket identifier
         self.tick_type = tick_type #ticket origin
@@ -80,6 +84,10 @@ class Crew:
     Class to organize groups of members
     '''
     def __init__(self,partners,p_type):
+        super().__init__(hash, fname, lname, c_score, leg_name, 
+                        p_name, email, alpha_hash, phone, location, 
+                        b_day, gender, sponsor, bio, avatar, pronoun, 
+                        fb, insta, er_con, er_num)
         self.partners = partners #hash of partner
         self.p_type = p_type #type of partnership
 
@@ -94,9 +102,24 @@ class Fees:
     Organization of fees associated with each member
     '''
     def __init__(self, c_fee, fee_tier, c_fee_date, meal_fee, 
-                 work_deposit, water_fee, add_water, foam, bike_fee, 
+                 work_deposit, water_fee, add_water_fee, foam, bike_fee, 
                  bike_dep, lag_fee):
-            pass
+        super().__init__(hash, fname, lname, c_score, leg_name, 
+                        p_name, email, alpha_hash, phone, location, 
+                        b_day, gender, sponsor, bio, avatar, pronoun, 
+                        fb, insta, er_con, er_num)        
+        self.c_fee = c_fee #camp fee
+        self.fee_tier = fee_tier #level of fee based on entrance
+        self.c_fee_date = c_fee_date #date  of expiry for offer
+        self.meal_fee = meal_fee #specific cost for meals
+        self.work_deposit = work_deposit #rewards/cost for work unit
+        self.water_fee = water_fee #cost of initial water
+        self.add_water_fee = add_water_fee #water add-ons
+        self.foam = foam #gift for foam cost
+        self.bike_fee = bike_fee #if camp rents cost
+        self.bike_dep = bike_dep #deposit for bike if applicable
+        self.lag_fee = lag_fee #cost of lag bolt combo
+            
 
 class Social:
     '''
