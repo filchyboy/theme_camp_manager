@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: camp-manager-sc
+Version: 0.1.1
+Summary: Camp Manager Project for Theme Camps at Burning Man
+Home-page: https://github.com/filchyboy/camp-manager
+Author: Chris Filkins
+Author-email: christopher.filkins@gmail.com
+License: MIT
+Description: # camp-manager
+         Build docs for theme camp manager
+        
+Keywords: learning tools
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

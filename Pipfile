@@ -8,6 +8,7 @@ twine = "*"
 
 [packages]
 pandas = "*"
+camp-manager-sc = {index = "https://test.pypi.org/simple/",version = "==0.1.1"}
 
 [requires]
 python_version = "3.7"
