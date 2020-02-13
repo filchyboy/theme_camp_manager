@@ -1,5 +1,7 @@
 README.md
 setup.py
+tests/__init__.py
+tests/import_sheet.py
 theme_camp_manager.egg-info/PKG-INFO
 theme_camp_manager.egg-info/SOURCES.txt
 theme_camp_manager.egg-info/dependency_links.txt
