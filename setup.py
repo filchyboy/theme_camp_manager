@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="camp_manager_sc",
-    version="0.1.2",
+    name="theme_camp_manager",
+    version="0.1.1",
     author="Chris Filkins",
     author_email="christopher.filkins@gmail.com",
     description="Camp Manager Project for Theme Camps at Burning Man",
