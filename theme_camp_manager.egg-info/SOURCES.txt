@@ -1,0 +1,6 @@
+README.md
+setup.py
+theme_camp_manager.egg-info/PKG-INFO
+theme_camp_manager.egg-info/SOURCES.txt
+theme_camp_manager.egg-info/dependency_links.txt
+theme_camp_manager.egg-info/top_level.txt
